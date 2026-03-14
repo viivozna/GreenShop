@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="regForm">
+            <button type="button" class="closeBtn" aria-label="Close form">
+                <img src="images/closeicon.png" alt="">
+            </button>
+        
+            <div class="authSwitch">
+                <a href="/login" class="logButton">Login</a>
+                <span class="divider">|</span>
+                <a href="/registration" class="regButton">Registration</a>
+            </div>
+        
+            <p class="enterTxt">Enter your email and password to register.</p>
+        
+            <form action="/registration">
+                <input class="input" name="username" placeholder="Username" type="text" required autocomplete="username">
+                <input class="input" name="email" placeholder="Enter your email address" type="email" required autocomplete="email">
+                <input class="input" name="password" placeholder="Password" type="password" minlength="8" maxlength="15" required autocomplete="new-password">
+                <input class="input" name="confirm_password" placeholder="Confirm your password" type="password" required autocomplete="new-password">
+                <button type="submit" class="registerBut">Register</button>
+            </form>
+        
+            <div class="regWith">
+                <div class="line"></div>
+                <span class="difReg">Or register with</span>
+                <div class="line"></div>
+
+            </div>
+        
+            <div class="socialBut">
+                <button class="sBtn" type="button">
+                    <img src="images/googlelogo.png" alt="Google">
+                    <span>Continue with Google</span>
+                </button>
+                <button class="sBtn" type="button">
+                    <img src="images/facebooklogo.png" alt="Facebook">
+                    <span>Continue with Facebook</span>
+                </button>
+            </div>
+        
+        </div>
+    </main>
+    
+</body>
+</html>

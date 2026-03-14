@@ -1,0 +1,132 @@
+a {
+    text-decoration: none;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    border: none;
+    background-color: #FFFFFF
+}
+
+.regForm {
+    position: relative;
+    width: 500px;
+    height: 656px;
+    margin: 80px auto;
+    border: 0.5px solid gray;
+    padding: 15px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.authSwitch {
+    text-align: center;
+    margin-top: 52px;
+    margin-bottom: 40px;
+}
+
+.regButton {
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 16px;
+    color: #46A358;
+}
+
+.logButton {
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 16px;
+    color: #3D3D3D;
+}
+
+.divider {
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 250;
+    font-size: 18px;
+    line-height: 16px;
+    color: #3D3D3D;
+}
+
+.enterTxt {
+    font-family: "Cera Pro", sans-serif;
+    margin: 0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #3D3D3D;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.input {
+    width: 300px;
+    height: 40px;
+    padding-left: 14px;
+    box-sizing: border-box;
+    border: 1px solid #EAEAEA;
+}
+
+input::placeholder {
+    width: 65px;
+    height: 16px;
+    font-size: 14px;
+}
+
+.registerBut {
+    width: 300px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #46A358;
+    font-family: "Cera Pro", sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 36px;
+    border: none;
+}
+
+.regWith {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 27px;
+}
+
+.line {
+    width: 97px;
+    border: 1px solid #EAEAEA;
+}
+
+.difReg {
+    font-family: "Cera Pro", sans-serif;
+    font-size: 13px;
+    margin: 0;
+
+}
+
+.socialBut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.sBtn {
+    width: 300px;
+    height: 40px;
+    font-family: "Cera Pro", sans-serif;
+    color: #727272;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+}
