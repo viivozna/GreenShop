@@ -1,3 +1,41 @@
+@font-face {
+    font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    font-family: 'CeraPro', sans-serif;
+    font-size: 14px;
+    color: #3D3D3D;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 900;
+}
 
 a {
     text-decoration: none;
@@ -29,7 +67,6 @@ a {
 }
 
 .regButton {
-    font-family: "Cera Pro", sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 16px;
@@ -37,7 +74,6 @@ a {
 }
 
 .logButton {
-    font-family: "Cera Pro", sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 16px;
@@ -45,7 +81,6 @@ a {
 }
 
 .divider {
-    font-family: "Cera Pro", sans-serif;
     font-weight: 250;
     font-size: 18px;
     line-height: 16px;
@@ -53,7 +88,6 @@ a {
 }
 
 .enterTxt {
-    font-family: "Cera Pro", sans-serif;
     margin: 0;
     font-weight: 400;
     font-size: 13px;
@@ -89,7 +123,6 @@ input::placeholder {
     height: 45px;
     border-radius: 5px;
     background-color: #46A358;
-    font-family: "Cera Pro", sans-serif;
     font-size: 16px;
     color: #FFFFFF;
     margin-bottom: 36px;
@@ -110,7 +143,6 @@ input::placeholder {
 }
 
 .difReg {
-    font-family: "Cera Pro", sans-serif;
     font-size: 13px;
     margin: 0;
 
@@ -126,7 +158,6 @@ input::placeholder {
 .sBtn {
     width: 300px;
     height: 40px;
-    font-family: "Cera Pro", sans-serif;
     color: #727272;
     background-color: #FFFFFF;
     border: 1px solid #EAEAEA;
@@ -166,23 +197,23 @@ nav,
     text-align: right;
 }
 
-nav {
+.mainNav {
     width: 60%;
     text-align: center;
     margin-top: 0;
 }
 
-nav li {
+.mainNav li {
     display: inline-block;
     margin: 0 15px;
 }
 
-nav a {
+.mainNav a {
     position: relative;
     display: inline-block;
 }
 
-nav a.active::after {
+.mainNav a.active::after {
     content: "";
     position: absolute;
     bottom: -29px;
@@ -254,4 +285,166 @@ nav a.active::after {
     margin-top: 44px;
 }
 
+/* products section */
 
+.content {
+    margin-top: 26px;
+}
+
+.content .container {
+    font-size: 0;
+}
+
+.sidebar,
+.productsSection {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+}
+
+.productsSection {
+    width: 69%;
+}
+
+.sidebar {
+    width: 26%;
+    margin-right: 3%;
+    box-sizing: border-box;
+}
+
+.allCategories {
+    background-color: #FBFBFB;
+    padding: 18px 14px;
+}
+
+.categoriesNav {
+    width: 100%;
+    height: 774px;
+}
+
+.categoriesNav li {
+    padding-top: 7px;
+    padding-left: 20px;
+    line-height: 40px;
+}
+
+.categoriesNav li span {
+    float: right;
+}
+
+.saleBanner img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.productsTop {
+    margin-bottom: 31px;
+}
+
+.productsNav,
+.sortBox {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.productsNav {
+    width: 69%;
+}
+
+.sortBox select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    color: #3D3D3D;
+    cursor: pointer;
+}
+
+.sortBox {
+    position: relative;
+    text-align: right;
+    width: 30%;
+}
+
+.sortBox select {
+    background: url('../images/arrow-down.svg') no-repeat right center;
+    background-size: 10px 6px;
+    padding-right: 18px;
+}
+
+.productsNav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.productsNav li:last-child {
+    margin-right: 0;
+}
+
+.productsNav a {
+    position: relative;
+    display: inline-block;
+}
+
+.productsNav a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #46A358;
+}
+
+.allProducts ul {
+    font-size: 0;
+}
+
+.productCard {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    width: 33.33%;
+}
+
+.productCard img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    background-color: #FBFBFB;
+}
+
+.paginationNav {
+    margin-top: 90px;
+    float: right;
+}
+
+.paginationNav ul {
+    font-size: 0;
+}
+
+.paginationNav li {
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.paginationNav a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #E5E5E5;
+    border-radius: 6px;
+}
+
+.paginationNav a.active {
+    background-color: #46A358;
+    color: #fff;
+    border-color: #46A358;
+}
