@@ -19,10 +19,10 @@
 
         <nav class="mainNav">
           <ul>
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#plant_care">Plant Care</a></li>
-            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#home" class="active categories">Home</a></li>
+            <li><a href="#shop" class="categories">Shop</a></li>
+            <li><a href="#plant_care" class="categories">Plant Care</a></li>
+            <li><a href="#blogs" class="categories">Blogs</a></li>
           </ul>
         </nav>
 
@@ -59,7 +59,7 @@
         </div>
       </section>
 
-      <section class="content">
+      <section id="shop" class="content">
         <div class="container">
           <aside class="sidebar">
             <div class="allCategories">
@@ -67,40 +67,42 @@
               <nav class="categoriesNav">
                 <ul>
                   <li class="list">
-                    <a href="#house_plants" class="left">House Plants</a>
-                    <span>(33)</span>
+                    <a href="#house_plants" class="plant active"
+                      >House Plants</a
+                    >
+                    <span class="plant active">(33)</span>
                   </li>
-                  <li>
-                    <a href="#potter_plants">Potter Plants</a>
-                    <span>(12)</span>
+                  <li class="list">
+                    <a href="#potter_plants" class="plant">Potter Plants</a>
+                    <span class="plant">(12)</span>
                   </li>
-                  <li>
-                    <a href="#seeds">Seeds</a>
-                    <span>(65)</span>
+                  <li class="list">
+                    <a href="#seeds" class="plant">Seeds</a>
+                    <span class="plant">(65)</span>
                   </li>
-                  <li>
-                    <a href="#small-plants">Small plants</a>
-                    <span>(39)</span>
+                  <li class="list">
+                    <a href="#small-plants" class="plant">Small plants</a>
+                    <span class="plant">(39)</span>
                   </li>
-                  <li>
-                    <a href="#big_plants">Big plants</a>
-                    <span>(23)</span>
+                  <li class="list">
+                    <a href="#big_plants" class="plant">Big plants</a>
+                    <span class="plant">(23)</span>
                   </li>
-                  <li>
-                    <a href="#succulents">Succulents</a>
-                    <span>(17)</span>
+                  <li class="list">
+                    <a href="#succulents" class="plant">Succulents</a>
+                    <span class="plant">(17)</span>
                   </li>
-                  <li>
-                    <a href="#terrariums">Terrariums</a>
-                    <span>(19)</span>
+                  <li class="list">
+                    <a href="#terrariums" class="plant">Terrariums</a>
+                    <span class="plant">(19)</span>
                   </li>
-                  <li>
-                    <a href="#gardening">Gardening</a>
-                    <span>(13)</span>
+                  <li class="list">
+                    <a href="#gardening" class="plant">Gardening</a>
+                    <span class="plant">(13)</span>
                   </li>
-                  <li>
-                    <a href="#accessories">Accessories</a>
-                    <span>(18)</span>
+                  <li class="list">
+                    <a href="#accessories" class="plant">Accessories</a>
+                    <span class="plant">(18)</span>
                   </li>
                 </ul>
               </nav>
@@ -116,13 +118,19 @@
 
           <div class="productsSection">
             <div class="productsTop">
-              <nav class="productsNav">
+              <div class="productsNav">
                 <ul>
-                  <li><a href="#all_plants" class="active">All Plants</a></li>
-                  <li><a href="#new_arrivals">New Arrivals</a></li>
-                  <li><a href="#sale">Sale</a></li>
+                  <li>
+                    <a href="#all_plants" class="active categories"
+                      >All Plants</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#new_arrivals" class="categories">New Arrivals</a>
+                  </li>
+                  <li><a href="#sale" class="categories">Sale</a></li>
                 </ul>
-              </nav>
+              </div>
 
               <div class="sortBox">
                 <label for="sortBox">Sort by:</label>
@@ -141,7 +149,7 @@
                 </li>
               </ul>
 
-              <nav class="paginationNav">
+              <div class="paginationNav">
                 <ul>
                   <li><a href="#" class="active">1</a></li>
                   <li><a href="#">2</a></li>
@@ -149,7 +157,7 @@
                   <li><a href="#">4</a></li>
                   <li><a href="#">&gt</a></li>
                 </ul>
-              </nav>
+              </div>
             </div>
           </div>
         </div>
