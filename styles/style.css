@@ -369,13 +369,108 @@ header .container {
     flex: 1 1 250px;
     max-width: 300px;
     font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.productCard h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.productCard:hover {
+    transform: scale(1.03);
 }
 
 .productCard img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+/* hover-hw9 */
+
+.productImage {
+    position: relative;
     background-color: #FBFBFB;
+}
+
+.productImage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #46A358;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.productCard:hover .productImage::before {
+    opacity: 1;
+}
+
+.productActions {
+    position: absolute;
+    left: 50%;
+    bottom: 7px;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.productCard:hover .productActions {
+    opacity: 1;
+    visibility: visible;
+}
+
+.productActions a {
+    width: 35px;
+    height: 35px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.productActions a img {
+    width: 20px;
+    height: 20px;
+}
+
+.productActions a:hover {
+    border-color: #46A358;
+    transform: scale(1.2);
+}
+
+/* sale */
+
+.saleBadge {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    background-color: #46A358;
+    color: #FFFFFF;
+    padding: 5px 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.currentPrice {
+    color: #46A358;
+    font-weight: 400;
+    margin-right: 16px;
+}
+
+.oldPrice {
+    color: #A5A5A5;
+    text-decoration: line-through;
 }
 
 .paginationNav {
@@ -532,6 +627,9 @@ header .container {
 
 .blog-post-txt {
     padding: 18px 15px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .post-meta {
@@ -563,6 +661,7 @@ header .container {
     font-weight: 500;
     color: #3D3D3D;
     transition: 0.3s;
+    margin-top: auto;
 }
 
 .blog-post-txt a:hover {
@@ -577,4 +676,7 @@ header .container {
 .blog-content li {
     flex: 1;
     background-color: #FBFBFB;
+    display: flex;
+    flex-direction: column;
 }
+
