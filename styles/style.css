@@ -89,7 +89,6 @@ h1 {
 }
 
 .enterTxt {
-    font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     color: #3D3D3D;
@@ -109,10 +108,6 @@ form {
     height: 40px;
     padding-left: 14px;
     border: 1px solid #EAEAEA;
-}
-
-input::placeholder {
-    font-size: 14px;
 }
 
 .registerBut {
@@ -185,6 +180,28 @@ header .container {
     margin: 0 auto;
 }
 
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 27px;
+    background-color: #46A358;
+    color: #FFFFFF;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.find-btn {
+    font-size: 14px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
 .logo a {
     display: flex;
     align-items: center;
@@ -234,7 +251,6 @@ header .container {
 }
 
 .subtitleTxt {
-    font-size: 14px;
     text-transform: uppercase;
     color: #3D3D3D;
 }
@@ -250,13 +266,8 @@ header .container {
 }
 
 .bannerTxt p {
-    font-size: 14px;
     color: #727272;
-}
-
-.shopnowBtn {
-    display: inline-block;
-    margin-top: 44px;
+    margin-bottom: 20px;
 }
 
 /* products section */
@@ -374,7 +385,6 @@ header .container {
 
 .productCard h3 {
     font-size: 16px;
-    font-weight: 400;
 }
 
 .productCard:hover {
@@ -464,7 +474,6 @@ header .container {
 
 .currentPrice {
     color: #46A358;
-    font-weight: 400;
     margin-right: 16px;
 }
 
@@ -546,7 +555,7 @@ header .container {
     margin-top: 138px;
 }
 
-.find-more ul {
+.find-more {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
@@ -585,20 +594,9 @@ header .container {
 }
 
 .find-more-content p {
-    font-size: 14px;
     line-height: 1.7;
     color: #727272;
     margin-bottom: 25px;
-}
-
-.find-more-content a {
-    display: inline-block;
-    padding: 11px 27px;
-    background-color: #46A358;
-    color: #FFFFFF;
-    border-radius: 6px;
-    font-size: 14px;
-    font-weight: 500;
 }
 
 /* blogs */
@@ -609,17 +607,15 @@ header .container {
 }
 
 .blog-header h2 {
-    font-weight: 700;
     margin-bottom: 10px;
     font-size: 30px;
 }
 
 .blog-header p {
     color: #727272;
-    font-weight: 400;
 }
 
-.blog-content ul {
+.blog-content {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -633,7 +629,6 @@ header .container {
 }
 
 .post-meta {
-    font-size: 14px;
     color: #46A358;
     margin-bottom: 8px;
 }
@@ -644,27 +639,24 @@ header .container {
 
 .blog-post-txt h3 {
     font-size: 20px;
-    font-weight: 700;
     line-height: 1.3;
     margin-bottom: 6px;
 }
 
 .blog-post-txt > p:not(.post-meta) {
-    font-size: 14px;
     line-height: 1.6;
     color: #727272;
     margin-bottom: 9px;
 }
 
-.blog-post-txt a {
-    font-size: 14px;
+.read-more {
     font-weight: 500;
     color: #3D3D3D;
     transition: 0.3s;
     margin-top: auto;
 }
 
-.blog-post-txt a:hover {
+.read-more:hover {
     color: #46A358;
 }
 
