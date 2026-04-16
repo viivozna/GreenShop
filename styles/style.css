@@ -208,19 +208,19 @@ header .container {
     gap: 8px;
 }
 
-.mainNav ul {
+.main-menu>ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
 }
 
-.mainNav a {
+.main-menu a {
     position: relative;
     font-size: 16px;
 }
 
-.mainNav a.active::after {
+.main-menu a.active::after {
     content: "";
     position: absolute;
     bottom: -32px;
@@ -228,6 +228,78 @@ header .container {
     width: 100%;
     height: 3px;
     background-color: #46A358;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.has-second-submenu {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    /* top: 100%; */
+    /* left: 0; */
+    background: #EDF6EE;
+    width: 143px;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 38px;
+    transition: 0.3s ease;
+}
+
+.menu-item:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu > li::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: solid #F5F5F5;
+    border-width: 1px 1px 0 0;
+    transform: rotate(45deg);
+    position: absolute ;
+    right: 10px;
+    top: 15px;
+}
+
+.second-submenu {
+    position: absolute;
+    top: -125px;
+    left: 100%;
+    background: #EDF6EE;
+    width: 215px;
+    opacity: 0;
+    visibility: hidden;
+    margin-left: 3px;
+    transition: 0.3s ease;
+}
+
+.has-second-submenu:hover .second-submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.submenu a,
+.second-submenu a {
+    display: block;
+    padding: 10px 15px;
+    line-height: 1.4;
+}
+
+.submenu a:hover,
+.second-submenu a:hover {
+    background: #1A712A;
+    color: #fff; 
+    font-weight: 700;
 }
 
 .header {
@@ -545,6 +617,7 @@ header .container {
 .active {
     color: #46A358;
 }
+
 
 /* plant care */
 #plant-care {
