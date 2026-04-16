@@ -255,11 +255,12 @@ header .container {
     visibility: visible;
 }
 
-.submenu li {
+.submenu>li>a {
     position: relative;
+    display: block;
 }
 
-.submenu > li::after {
+.submenu>li>a::after {
     content: "";
     width: 10px;
     height: 10px;
