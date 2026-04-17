@@ -143,6 +143,7 @@ form {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    font-family: inherit;
 }
 
 .sBtn {
@@ -234,14 +235,8 @@ header .container {
     position: relative;
 }
 
-.has-second-submenu {
-    position: relative;
-}
-
 .submenu {
     position: absolute;
-    /* top: 100%; */
-    /* left: 0; */
     background: #EDF6EE;
     width: 143px;
     opacity: 0;
@@ -255,32 +250,18 @@ header .container {
     visibility: visible;
 }
 
-.submenu>li>a {
-    position: relative;
-    display: block;
-}
-
-.submenu>li>a::after {
-    content: "";
-    width: 10px;
-    height: 10px;
-    border: solid #F5F5F5;
-    border-width: 1px 1px 0 0;
-    transform: rotate(45deg);
-    position: absolute ;
-    right: 10px;
-    top: 15px;
+.menu-item:hover>a {
+    color: #46A358;
 }
 
 .second-submenu {
     position: absolute;
-    top: -125px;
+    top: 0;
     left: 100%;
     background: #EDF6EE;
     width: 215px;
     opacity: 0;
     visibility: hidden;
-    margin-left: 3px;
     transition: 0.3s ease;
 }
 
@@ -296,10 +277,26 @@ header .container {
     line-height: 1.4;
 }
 
-.submenu a:hover,
-.second-submenu a:hover {
+.has-second-submenu>a {
+    position: relative;
+}
+
+.submenu li:has(.second-submenu)>a::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: solid #F5F5F5;
+    border-width: 1px 1px 0 0;
+    transform: rotate(45deg);
+    position: absolute ;
+    right: 10px;
+    top: 15px;
+}
+
+.submenu li:hover>a,
+.second-submenu li:hover>a {
     background: #1A712A;
-    color: #fff; 
+    color: #fff;
     font-weight: 700;
 }
 
