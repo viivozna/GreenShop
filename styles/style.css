@@ -285,7 +285,7 @@ header .container {
     content: "";
     width: 10px;
     height: 10px;
-    border: solid #F5F5F5;
+    border: solid #3D3D3D;
     border-width: 1px 1px 0 0;
     transform: rotate(45deg);
     position: absolute ;
