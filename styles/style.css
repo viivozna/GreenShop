@@ -287,10 +287,14 @@ header .container {
     height: 10px;
     border: solid #3D3D3D;
     border-width: 1px 1px 0 0;
-    transform: rotate(45deg);
+    transform: rotate(-135deg);
     position: absolute ;
     right: 10px;
     top: 15px;
+}
+
+.submenu li:hover:has(.second-submenu)>a::after {
+    border-color: #fff;
 }
 
 .submenu li:hover>a,
@@ -898,7 +902,11 @@ footer h3 {
 }
 
 .footer-column ul a {
-    line-height: 30px;
+    display: block;
+}
+
+.footer-column ul li:not(:last-child) {
+    margin-bottom: 8px;
 }
 
 .footer-column a:hover {
