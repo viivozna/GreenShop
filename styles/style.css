@@ -96,7 +96,7 @@ h1 {
     margin-bottom: 14px;
 }
 
-form {
+.register-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -776,6 +776,27 @@ footer h3 {
     margin-right: 25px;
 }
 
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 15px;
+}
+
+.icon-1 {
+    background-image: url('../images/footer-picture1.png');
+}
+
+.icon-2 {
+    background-image: url('../images/footer-picture2.png');
+}
+
+.icon-3 {
+    background-image: url('../images/footer-picture3.png');
+}
+
 .feature-item h3 {
     margin-top: 10px;
     margin-bottom: 7px;
@@ -863,13 +884,13 @@ footer h3 {
 
 .footer-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 30px;
     padding: 33px 25px 29px;
 }
 
 .footer-column {
-    min-width: 140px;
+    width: 140px;
 }
 
 .footer-column h3 {

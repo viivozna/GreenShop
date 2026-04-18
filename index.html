@@ -531,7 +531,7 @@
       <div class="footer-top">
         <div class="footer-features">
           <div class="feature-item">
-            <img src="images/footer-picture1.png" alt="Garden Care" />
+            <div class="feature-icon icon-1"></div>
             <h3>Garden Care</h3>
             <p>
               We are an online plant shop offering a wide range of cheap and
@@ -539,7 +539,7 @@
             </p>
           </div>
           <div class="feature-item">
-            <img src="images/footer-picture2.png" alt="Plant Renovation" />
+            <div class="feature-icon icon-2"></div>
             <h3>Plant Renovation</h3>
             <p>
               We are an online plant shop offering a wide range of cheap and
@@ -547,7 +547,7 @@
             </p>
           </div>
           <div class="feature-item">
-            <img src="images/footer-picture3.png" alt="Watering Garden" />
+            <div class="feature-icon icon-3"></div>
             <h3>Watering Garden</h3>
             <p>
               We are an online plant shop offering a wide range of cheap and
@@ -558,10 +558,15 @@
 
         <div class="footer-newsletter">
           <h3>Would you like to join newsletters?</h3>
-          <div class="newsletter-form">
-            <input type="email" placeholder="enter your email address..." />
-            <button>Join</button>
-          </div>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="enter your email address..."
+              required
+              name="email"
+            />
+            <button type="submit">Join</button>
+          </form>
           <p>
             We usually post offers and challenges in newsletter. We’re your
             online houseplant destination. We offer a wide range of houseplants
