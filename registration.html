@@ -9,22 +9,22 @@
   </head>
   <body>
     <main>
-      <div class="regForm">
-        <button type="button" class="closeBtn" aria-label="Close form">
+      <div class="registration-form">
+        <a href="index.html" class="close-button" aria-label="Close form">
           <img src="images/closeicon.png" alt="" />
-        </button>
+        </a>
 
-        <div class="authSwitch">
-          <a href="/login" class="logButton">Login</a>
+        <div class="auth-switch">
+          <a href="/login" class="login-button">Login</a>
           <span class="divider">|</span>
-          <a href="/registration" class="regButton">Registration</a>
+          <a href="/registration" class="registration-button">Registration</a>
         </div>
 
-        <p class="enterTxt">Enter your email and password to register.</p>
+        <p class="enter-text">Enter your email and password to register.</p>
 
         <form class="register-form" action="/registration">
           <input
-            class="input"
+            class="registration-input"
             name="username"
             placeholder="Username"
             type="text"
@@ -32,47 +32,46 @@
             autocomplete="username"
           />
           <input
-            class="input"
+            class="registration-input"
             name="email"
             placeholder="Enter your email address"
             type="email"
             required
             autocomplete="email"
           />
+          <div class="input-wrapper">
+            <input
+              class="registration-input"
+              name="password"
+              placeholder="Password"
+              type="password"
+            />
+            <img src="images/hide-icon.svg" class="input-icon" />
+          </div>
           <input
-            class="input"
-            name="password"
-            placeholder="Password"
-            type="password"
-            minlength="8"
-            maxlength="15"
-            required
-            autocomplete="new-password"
-          />
-          <input
-            class="input"
+            class="registration-input"
             name="confirm_password"
             placeholder="Confirm your password"
             type="password"
             required
             autocomplete="new-password"
           />
-          <button type="submit" class="registerBut">Register</button>
+          <button type="submit" class="register-submit-button">Register</button>
         </form>
 
-        <div class="regWith">
-          <div class="line"></div>
-          <span class="difReg">Or register with</span>
-          <div class="line"></div>
+        <div class="register-with">
+          <div class="line-regform"></div>
+          <span class="register-with-text">Or register with</span>
+          <div class="line-regform"></div>
         </div>
 
-        <div class="socialBut">
-          <button class="sBtn" type="button">
-            <img src="images/googlelogo.png" alt="Google" />
+        <div class="social-networks">
+          <button class="chose-social" type="button">
+            <img src="images/googleregister.svg" alt="Google" />
             <span>Continue with Google</span>
           </button>
-          <button class="sBtn" type="button">
-            <img src="images/facebooklogo.png" alt="Facebook" />
+          <button class="chose-social" type="button">
+            <img src="images/facebookregister.svg" alt="Facebook" />
             <span>Continue with Facebook</span>
           </button>
         </div>
