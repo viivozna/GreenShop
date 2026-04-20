@@ -48,7 +48,7 @@ header {
     margin-bottom: 10px;
 }
 
-main {
+.index-html {
     padding-top: 100px;
 }
 
@@ -71,11 +71,18 @@ main {
     background: transparent;
     padding: 0;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s;
+    color: #46A358;
 }
 
 .close-button:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+}
+
+.close-icon {
+    width: 16px;
+    height: 16px;
+    display: block;
 }
 
 .auth-switch {
@@ -224,16 +231,22 @@ main {
     font-weight: 500;
     color: #727272;
     cursor: pointer;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .chose-social:hover {
-    transform: scale(1.02);
     border-color: #717171;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.chose-social img {
+.chose-social svg {
+    display: block;
     flex-shrink: 0;
+}
+
+.registration-icon {
+    width: 18px;
+    height: 18px;
 }
 
 /* main banner */
@@ -275,6 +288,11 @@ header .container {
     font-size: 16px;
     font-weight: 500;
     transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-icon {
+    width: 20px;
+    height: 20px;
 }
 
 .find-btn {
@@ -388,6 +406,39 @@ header .container {
     font-weight: 700;
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-allicons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-allicons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    color: #3D3D3D;
+    transition: color 0.3s ease;
+}
+
+.header-allicons a:hover {
+    color: #46A358;
+}
+
+.header-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    flex-shrink: 0;
+}
+
 .bannerTxt,
 .bannerImg {
     flex: 1;
@@ -460,7 +511,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 17px 5px 10px 15px; 
+    margin: 5px 5px 5px 15px; 
     padding: 5px 5px;
     /* top right bottom left; */
     line-height: 40px;
@@ -507,7 +558,7 @@ header .container {
     cursor: pointer;
     background: url('../images/arrow-down.svg') no-repeat right center;
     background-size: 10px 6px;
-    padding-right: 18px;
+    padding-right: 12px;
     transition: color 0.3s ease;
 }
 
@@ -604,18 +655,18 @@ header .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.3s;
-    border: 2px solid transparent;
-}
-
-.productActions a img {
-    width: 20px;
-    height: 20px;
-}
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #3D3D3D;}
 
 .productActions a:hover {
-    border-color: #46A358;
+    color: #46A358;
     transform: scale(1.2);
+}          
+
+.product-action-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
 }
 
 /* sale */
@@ -924,7 +975,7 @@ footer h3 {
 }
 
 .newsletter-form button {
-    width: 85px;
+    min-width: 85px;
     height: 40px;
     background-color: #46A358;
     color: #FFFFFF;
@@ -960,7 +1011,7 @@ footer h3 {
 .contact-item {
     display: flex;
     align-items: center;
-    gap: 9px;
+    gap: 10px;
     max-width: 240px;
 }
 
@@ -969,8 +1020,14 @@ footer h3 {
     line-height: 22px;
 }
 
-.contact-item img {
+.contact-item svg {
     flex-shrink: 0;
+}
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
 }
 
 .contact-item:first-child a {
@@ -1028,9 +1085,6 @@ footer h3 {
     height: 30px;
     border: 1px solid rgba(70, 163, 88, 0.2);
     border-radius: 4px;
-}
-
-.social-list a {
     transition: transform 0.3s ease;
 }
 
@@ -1038,9 +1092,11 @@ footer h3 {
     transform: scale(1.1);
 }
 
-.social-list img {
+.social-icon {
     width: 18px;
     height: 18px;
+    display: block;
+    flex-shrink: 0;
 }
 
 .payment-title {
@@ -1126,3 +1182,4 @@ footer h3 {
     padding: 8px 25px;
     border-radius: 6px;
 }
+

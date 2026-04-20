@@ -11,7 +11,9 @@
     <main>
       <div class="registration-form">
         <a href="index.html" class="close-button" aria-label="Close form">
-          <img src="images/closeicon.png" alt="" />
+          <svg class="close-icon">
+            <use href="icons/sprite.svg#icon-close-vector"></use>
+          </svg>
         </a>
 
         <div class="auth-switch">
@@ -45,8 +47,12 @@
               name="password"
               placeholder="Password"
               type="password"
+              required
+              autocomplete="new-password"
             />
-            <img src="images/hide-icon.svg" class="input-icon" />
+            <svg class="registration-icon input-icon">
+              <use href="icons/sprite.svg#icon-hide-icon"></use>
+            </svg>
           </div>
           <input
             class="registration-input"
@@ -67,11 +73,15 @@
 
         <div class="social-networks">
           <button class="chose-social" type="button">
-            <img src="images/googleregister.svg" alt="Google" />
+            <svg class="registration-icon">
+              <use href="icons/sprite.svg#icon-googleregister"></use>
+            </svg>
             <span>Continue with Google</span>
           </button>
           <button class="chose-social" type="button">
-            <img src="images/facebookregister.svg" alt="Facebook" />
+            <svg class="registration-icon">
+              <use href="icons/sprite.svg#icon-facebookregister"></use>
+            </svg>
             <span>Continue with Facebook</span>
           </button>
         </div>
