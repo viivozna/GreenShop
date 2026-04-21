@@ -950,14 +950,15 @@ footer h3 {
 }
 
 .footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 354px;
     flex-shrink: 0;
 }
 
 .newsletter-form {
     display: flex;
-    margin-top: 18px;
-    margin-bottom: 17px;
 }
 
 .newsletter-form input {
@@ -968,6 +969,7 @@ footer h3 {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
     font-size: 14px;
     color: #3D3D3D;
+    font-family: inherit;
 }
 
 .newsletter-form input::placeholder {
@@ -990,6 +992,26 @@ footer h3 {
 .newsletter-form button:hover {
     background-color: #3d944e;
     transform: scale(1.03);
+}
+
+.newsletter-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.newsletter-checkbox input {
+    transform: translateY(-1px);
+}
+
+input[type="checkbox"] {
+    accent-color: #46A358;
+}
+
+.newsletter-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .footer-newsletter p {
@@ -1183,3 +1205,53 @@ footer h3 {
     border-radius: 6px;
 }
 
+/* preloader */
+
+.preloader-page {
+    position: fixed;
+    inset: 0;
+    background-color: #FBFBFB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+}
+
+.preloader-page.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.dots-loader {
+    display: flex;
+    gap: 10px;
+}
+
+.dots-loader span {
+    width: 16px;
+    height: 16px;
+    background-color: #46A358;
+    border-radius: 50%;
+    animation: bounce 0.6s infinite alternate;
+}
+
+.dots-loader span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dots-loader span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateY(-12px);
+        opacity: 1;
+    }
+}

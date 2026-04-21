@@ -6,8 +6,16 @@
     <title>Green Shop</title>
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="preloader.js" defer></script>
   </head>
   <body>
+    <div class="preloader-page" id="preloader">
+      <div class="dots-loader">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
     <header>
       <div class="container">
         <div class="logo">
@@ -65,7 +73,7 @@
             </a>
           </div>
 
-          <a href="registration.html" class="btn">
+          <a href="registration.html" class="btn" id="login-link">
             <svg class="btn-icon">
               <use href="icons/sprite.svg#icon-logout"></use>
             </svg>
@@ -619,14 +627,25 @@
 
         <div class="footer-newsletter">
           <h3>Would you like to join newsletters?</h3>
-          <form class="newsletter-form">
-            <input
-              type="email"
-              placeholder="enter your email address..."
-              required
-              name="email"
-            />
-            <button type="submit">Join</button>
+          <form class="newsletter-content">
+            <div class="newsletter-form">
+              <input
+                type="email"
+                placeholder="enter your email address..."
+                required
+                name="email"
+              />
+              <button type="submit">Join</button>
+            </div>
+            <div class="newsletter-checkbox">
+              <input
+                type="checkbox"
+                id="subscribeNews"
+                name="subscribe"
+                value="newsletter"
+              />
+              <label for="subscribeNews">Agree to the newsletter</label>
+            </div>
           </form>
           <p>
             We usually post offers and challenges in newsletter. We’re your
