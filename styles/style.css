@@ -994,18 +994,52 @@ footer h3 {
     transform: scale(1.03);
 }
 
+/* checkbox */
+
 .newsletter-checkbox {
     display: flex;
     align-items: center;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
     gap: 8px;
+    cursor: pointer;
 }
 
-.newsletter-checkbox input {
-    transform: translateY(-1px);
+.checkbox__input {
+    display: none;
 }
 
-input[type="checkbox"] {
-    accent-color: #46A358;
+.checkbox__box {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #46A358;
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.checkbox__box::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 9px;
+    border: solid #46A358;
+    border-width: 0 2px 2px 0;
+    top: 2px;
+    left: 5px;
+    transform: rotate(45deg) scale(0);
+    transition: transform 0.2s ease;
+}
+
+.checkbox__input:checked+.checkbox__box::after {
+    transform: rotate(45deg) scale(1);
+}
+
+.checkbox:hover .checkbox__box {
+    border-color: #3d944e;
 }
 
 .newsletter-content {
