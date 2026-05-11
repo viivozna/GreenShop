@@ -6,7 +6,6 @@
     <title>Green Shop</title>
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <script src="preloader.js" defer></script>
   </head>
   <body>
     <div class="preloader-page" id="preloader">
@@ -20,8 +19,8 @@
       <div class="container">
         <div class="logo">
           <a href="#">
-            <img src="images/logogreenshop.svg" alt="Logo" class="logoimg-1"/>
-            <img src="images/logotext.svg" alt="Logo text" class="logoimg-2"/>
+            <img src="images/logogreenshop.svg" alt="Logo" class="logoimg-1" />
+            <img src="images/logotext.svg" alt="Logo text" class="logoimg-2" />
           </a>
         </div>
 
@@ -59,21 +58,29 @@
         </nav>
 
         <div class="header-right">
-          <div class="header-allicons">
-            <a href="#">
-              <svg class="header-icon">
-                <use href="icons/sprite.svg#icon-search-vector"></use>
-              </svg>
-            </a>
+          <div class="header-top-mobile">
+            <div class="header-allicons">
+              <a href="#">
+                <svg class="header-icon">
+                  <use href="icons/sprite.svg#icon-search-vector"></use>
+                </svg>
+              </a>
 
-            <a href="#">
-              <svg class="header-icon">
-                <use href="icons/sprite.svg#icon-cart-vector"></use>
-              </svg>
-            </a>
+              <a href="#">
+                <svg class="header-icon">
+                  <use href="icons/sprite.svg#icon-cart-vector"></use>
+                </svg>
+              </a>
+            </div>
+
+            <div class="burger-btn js-burger-open">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
 
-          <a href="registration.html" class="btn" id="login-link">
+          <a href="registration.html" class="btn header-btn" id="login-link">
             <svg class="btn-icon">
               <use href="icons/sprite.svg#icon-logout"></use>
             </svg>
@@ -108,6 +115,7 @@
 
       <section id="shop" class="content">
         <div class="container">
+          <button class="mobile-filter-btn" id="filterBtn">Filters</button>
           <aside class="sidebar">
             <div class="allCategories">
               <h2>Categories</h2>
@@ -601,27 +609,41 @@
         <div class="footer-features">
           <div class="feature-item">
             <div class="feature-icon icon-1"></div>
-            <h3>Garden Care</h3>
-            <p>
-              We are an online plant shop offering a wide range of cheap and
-              trendy plants.
-            </p>
+
+            <div class="feature-content">
+              <h3>Garden Care</h3>
+
+              <p>
+                We are an online plant shop offering a wide range of cheap and
+                trendy plants.
+              </p>
+            </div>
           </div>
+
           <div class="feature-item">
             <div class="feature-icon icon-2"></div>
-            <h3>Plant Renovation</h3>
-            <p>
-              We are an online plant shop offering a wide range of cheap and
-              trendy plants.
-            </p>
+
+            <div class="feature-content">
+              <h3>Plant Renovation</h3>
+
+              <p>
+                We are an online plant shop offering a wide range of cheap and
+                trendy plants.
+              </p>
+            </div>
           </div>
+
           <div class="feature-item">
             <div class="feature-icon icon-3"></div>
-            <h3>Watering Garden</h3>
-            <p>
-              We are an online plant shop offering a wide range of cheap and
-              trendy plants.
-            </p>
+
+            <div class="feature-content">
+              <h3>Watering Garden</h3>
+
+              <p>
+                We are an online plant shop offering a wide range of cheap and
+                trendy plants.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -653,32 +675,38 @@
           </p>
         </div>
       </div>
+
       <div class="footer-contact">
-        <div class="contact-item">
+        <div class="contact-item logo-contact">
           <a href="#">
             <img src="images/logogreenshop.svg" alt="Logo" />
             <img src="images/logotext.svg" alt="Logo text" />
           </a>
         </div>
-        <div class="contact-item">
-          <svg class="contact-icon">
-            <use href="icons/sprite.svg#icon-location"></use>
-          </svg>
-          <a href="https://maps.google.com" target="_blank">
-            70 West Buckingham Ave, Farmingdale, NY 11735
-          </a>
-        </div>
-        <div class="contact-item">
-          <svg class="contact-icon">
-            <use href="icons/sprite.svg#icon-message"></use>
-          </svg>
-          <a href="mailto:contact@greenshop.com">contact@greenshop.com</a>
-        </div>
-        <div class="contact-item">
-          <svg class="contact-icon">
-            <use href="icons/sprite.svg#icon-calling"></use>
-          </svg>
-          <a href="tel:+8801911717490">+88 01911 717 490</a>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <svg class="contact-icon">
+              <use href="icons/sprite.svg#icon-location"></use>
+            </svg>
+            <a href="https://maps.google.com" target="_blank">
+              70 West Buckingham Ave, Farmingdale, NY 11735
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <svg class="contact-icon">
+              <use href="icons/sprite.svg#icon-message"></use>
+            </svg>
+            <a href="mailto:contact@greenshop.com">contact@greenshop.com</a>
+          </div>
+
+          <div class="contact-item">
+            <svg class="contact-icon">
+              <use href="icons/sprite.svg#icon-calling"></use>
+            </svg>
+            <a href="tel:+8801911717490">+88 01911 717 490</a>
+          </div>
         </div>
       </div>
 
@@ -751,5 +779,6 @@
         <p>© 2021 GreenShop. All Rights Reserved.</p>
       </div>
     </footer>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
