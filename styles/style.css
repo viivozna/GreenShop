@@ -1639,6 +1639,7 @@ footer h3 {
 
     header .container {
         justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .header-right {
